@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipeline>
+  <info>
+    <name>laboratorio</name>
+    <name_sync_with_filename>Y</name_sync_with_filename>
+    <description/>
+    <extended_description/>
+    <pipeline_version/>
+    <pipeline_type>Normal</pipeline_type>
+    <parameters>
+    </parameters>
+    <capture_transform_performance>N</capture_transform_performance>
+    <transform_performance_capturing_delay>1000</transform_performance_capturing_delay>
+    <transform_performance_capturing_size_limit>100</transform_performance_capturing_size_limit>
+    <created_user>-</created_user>
+    <created_date>2025/01/28 16:55:45.632</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2025/01/28 16:55:45.632</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <order>
+    <hop>
+      <from>laboratorio.csv</from>
+      <to>sangre</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>laboratorio.csv</from>
+      <to>orina</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <transform>
+    <name>laboratorio.csv</name>
+    <type>CSVInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>C:\ETL\tesis\database\laboratorio.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding/>
+    <fields>
+      <field>
+        <name>id_paciente</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>año</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Triglicéridos (mg/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Colesterol LDL (mg/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Colesterol total (mg/dl)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Colesterol HDL (mg/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Ftalato de mono-n-butilo (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Ftalato de monociclohexilo (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Ftalato de monoetilo (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Ftalato de mono-(2-etil)-hexilo (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Ftalato de monoisononilo (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Ftalato de mono-n-octilo (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Ftalato de monobencilo (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Daidzeína (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>o-Desmetilangolensina (O-DMA) (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Equol (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Enterodiol (ng/ml)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Enterolactona (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Genisteína (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>3-fluoranteno (ng/L)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Creatinina, orina (mg/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Péptido C: SI (nmol/L)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Insulina (uU/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Glicohemoglobina (%)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Bario, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Berilio, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Cadmio, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Cobalto, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Cesio, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Molibdeno, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Plomo en orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Platino, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Antimonio, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Talio, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Tungsteno, orina (ng/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Albúmina (g/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ALT (superior/inferior)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>AST (superior/inferior)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Fosfatasa alcalina (U/L)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Nitrógeno ureico en sangre (mg/dl)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Calcio, total (mg/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Bicarbonato (mmol/L)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>GGT (superior/inferior)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Glucosa (mg/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Hierro (ug/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>LDH (bajo/bajo)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Fósforo (mg/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Bilirrubina total (mg/dl)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Proteína, total (g/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Ácido úrico (mg/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Sodio (mmol/L)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Potasio (mmol/L)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Cloruro (mmol/L)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Osmolalidad (mOsm/kg)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Globulina (g/dL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Hormona folículo estimulante (mIU/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Hormona luteinizante (mIU/mL)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Proteína C reactiva (mg/dl)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Helicobacter pylori (ISR)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Fibrinógeno (mg/dl)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Fosfatasa alcalina ósea (ug/L)</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>272</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>orina</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <commit>1000</commit>
+    <connection>conexion</connection>
+    <fields>
+      <field>
+        <column_name>id_paciente</column_name>
+        <stream_name>id_paciente</stream_name>
+      </field>
+      <field>
+        <column_name>año</column_name>
+        <stream_name>año</stream_name>
+      </field>
+      <field>
+        <column_name>creatinina</column_name>
+        <stream_name>Creatinina, orina (mg/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>bario</column_name>
+        <stream_name>Bario, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>berilio</column_name>
+        <stream_name>Berilio, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>cadmio</column_name>
+        <stream_name>Cadmio, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>cobalto</column_name>
+        <stream_name>Cobalto, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>cesio</column_name>
+        <stream_name>Cesio, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>molibdeno</column_name>
+        <stream_name>Molibdeno, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>plomo</column_name>
+        <stream_name>Plomo en orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>platino</column_name>
+        <stream_name>Platino, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>antimonio</column_name>
+        <stream_name>Antimonio, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>talio</column_name>
+        <stream_name>Talio, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>tungsteno</column_name>
+        <stream_name>Tungsteno, orina (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>ftalato_mono_n_butilo</column_name>
+        <stream_name>Ftalato de mono-n-butilo (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>ftalato_monociclohexilo</column_name>
+        <stream_name>Ftalato de monociclohexilo (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>ftalato_monoetilo</column_name>
+        <stream_name>Ftalato de monoetilo (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>ftalato_mono_2_etil_hexilo</column_name>
+        <stream_name>Ftalato de mono-(2-etil)-hexilo (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>ftalato_monoisononilo</column_name>
+        <stream_name>Ftalato de monoisononilo (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>ftalato_mono_n_octilo</column_name>
+        <stream_name>Ftalato de mono-n-octilo (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>ftalato_monobencilo</column_name>
+        <stream_name>Ftalato de monobencilo (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>daidzeina</column_name>
+        <stream_name>Daidzeína (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>o_desmetilangolensina</column_name>
+        <stream_name>o-Desmetilangolensina (O-DMA) (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>equol</column_name>
+        <stream_name>Equol (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>enterodiol</column_name>
+        <stream_name>Enterodiol (ng/ml)</stream_name>
+      </field>
+      <field>
+        <column_name>enterolactona</column_name>
+        <stream_name>Enterolactona (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>genisteina</column_name>
+        <stream_name>Genisteína (ng/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>fluoranteno</column_name>
+        <stream_name>3-fluoranteno (ng/L)</stream_name>
+      </field>
+    </fields>
+    <ignore_errors>N</ignore_errors>
+    <only_when_have_rows>N</only_when_have_rows>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <return_keys>N</return_keys>
+    <schema>nhanes</schema>
+    <specify_fields>Y</specify_fields>
+    <table>orina</table>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_in_table>Y</tablename_in_table>
+    <truncate>N</truncate>
+    <use_batch>Y</use_batch>
+    <attributes/>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>320</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>sangre</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <commit>1000</commit>
+    <connection>conexion</connection>
+    <fields>
+      <field>
+        <column_name>id_paciente</column_name>
+        <stream_name>id_paciente</stream_name>
+      </field>
+      <field>
+        <column_name>año</column_name>
+        <stream_name>año</stream_name>
+      </field>
+      <field>
+        <column_name>trigliceridos</column_name>
+        <stream_name>Triglicéridos (mg/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>colesterol_ldl</column_name>
+        <stream_name>Colesterol LDL (mg/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>colesterol_total</column_name>
+        <stream_name>Colesterol total (mg/dl)</stream_name>
+      </field>
+      <field>
+        <column_name>colesterol_hdl</column_name>
+        <stream_name>Colesterol HDL (mg/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>peptido_c</column_name>
+        <stream_name>Péptido C: SI (nmol/L)</stream_name>
+      </field>
+      <field>
+        <column_name>insulina</column_name>
+        <stream_name>Insulina (uU/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>glicohemoglobina_porcentaje</column_name>
+        <stream_name>Glicohemoglobina (%)</stream_name>
+      </field>
+      <field>
+        <column_name>albumina</column_name>
+        <stream_name>Albúmina (g/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>alt_superior_inferior</column_name>
+        <stream_name>ALT (superior/inferior)</stream_name>
+      </field>
+      <field>
+        <column_name>ast_superior_inferior</column_name>
+        <stream_name>AST (superior/inferior)</stream_name>
+      </field>
+      <field>
+        <column_name>fosfatasa_alcalina</column_name>
+        <stream_name>Fosfatasa alcalina (U/L)</stream_name>
+      </field>
+      <field>
+        <column_name>nitrogeno_ureico</column_name>
+        <stream_name>Nitrógeno ureico en sangre (mg/dl)</stream_name>
+      </field>
+      <field>
+        <column_name>calcio_total</column_name>
+        <stream_name>Calcio, total (mg/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>bicarbonato</column_name>
+        <stream_name>Bicarbonato (mmol/L)</stream_name>
+      </field>
+      <field>
+        <column_name>ggt_superior_inferior</column_name>
+        <stream_name>GGT (superior/inferior)</stream_name>
+      </field>
+      <field>
+        <column_name>glucosa</column_name>
+        <stream_name>Glucosa (mg/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>hierro</column_name>
+        <stream_name>Hierro (ug/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>ldh_bajo_bajo</column_name>
+        <stream_name>LDH (bajo/bajo)</stream_name>
+      </field>
+      <field>
+        <column_name>fosforo</column_name>
+        <stream_name>Fósforo (mg/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>bilirrubina_total</column_name>
+        <stream_name>Bilirrubina total (mg/dl)</stream_name>
+      </field>
+      <field>
+        <column_name>proteina_total</column_name>
+        <stream_name>Proteína, total (g/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>acido_urico</column_name>
+        <stream_name>Ácido úrico (mg/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>sodio</column_name>
+        <stream_name>Sodio (mmol/L)</stream_name>
+      </field>
+      <field>
+        <column_name>potasio</column_name>
+        <stream_name>Potasio (mmol/L)</stream_name>
+      </field>
+      <field>
+        <column_name>cloruro</column_name>
+        <stream_name>Cloruro (mmol/L)</stream_name>
+      </field>
+      <field>
+        <column_name>osmolalidad</column_name>
+        <stream_name>Osmolalidad (mOsm/kg)</stream_name>
+      </field>
+      <field>
+        <column_name>globulina</column_name>
+        <stream_name>Globulina (g/dL)</stream_name>
+      </field>
+      <field>
+        <column_name>hormona_foliculo_estimulante</column_name>
+        <stream_name>Hormona folículo estimulante (mIU/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>hormona_luteinizante</column_name>
+        <stream_name>Hormona luteinizante (mIU/mL)</stream_name>
+      </field>
+      <field>
+        <column_name>proteina_c_reactiva</column_name>
+        <stream_name>Proteína C reactiva (mg/dl)</stream_name>
+      </field>
+      <field>
+        <column_name>helicobacter_pylori</column_name>
+        <stream_name>Helicobacter pylori (ISR)</stream_name>
+      </field>
+      <field>
+        <column_name>fibrinogeno</column_name>
+        <stream_name>Fibrinógeno (mg/dl)</stream_name>
+      </field>
+      <field>
+        <column_name>fosfatasa_alcalina_osea</column_name>
+        <stream_name>Fosfatasa alcalina ósea (ug/L)</stream_name>
+      </field>
+    </fields>
+    <ignore_errors>N</ignore_errors>
+    <only_when_have_rows>N</only_when_have_rows>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <return_keys>N</return_keys>
+    <schema>nhanes</schema>
+    <specify_fields>Y</specify_fields>
+    <table>sangre</table>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_in_table>Y</tablename_in_table>
+    <truncate>N</truncate>
+    <use_batch>Y</use_batch>
+    <attributes/>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>224</yloc>
+    </GUI>
+  </transform>
+  <transform_error_handling>
+  </transform_error_handling>
+  <attributes/>
+</pipeline>
